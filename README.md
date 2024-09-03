@@ -2,7 +2,7 @@
 
 <img width="70%" src="https://github.com/hangga/sample-usaidbox/blob/main/usaidbook.png?raw=true"/>
 
-Usaidbox PDF Viewer is a Java library for displaying PDF files embedded within (Swing GUI) applications. It uses Apache PDFBox as the backend for PDF rendering, providing easy PDF viewing and manipulation capabilities for your app.
+Usaidbox PDF Viewer is a Simple Java library for displaying PDF files embedded within (Swing GUI) applications. It uses Apache PDFBox as the backend for PDF rendering, providing easy PDF viewing and manipulation capabilities for your app.
 
 ## Features
 
