@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.usaidbox'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.repsy.io/mvn/hangga/repo' }
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'com.box.usaid:usaidbox:1.0.1'
+}
+
+test {
+    useJUnitPlatform()
+}
