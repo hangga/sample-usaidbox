@@ -29,11 +29,20 @@ dependencies {
 
 Basic example to display a PDF file:
 ```Java
-String path = System.getProperty("user.dir") + "/Programming in Python 3 - A Complete Introduction to the Python Language, Second Edition (2010) 1.pdf";
 new UsaidBox()
-    .loadPdf(path)
+    .loadPdf(< path >)
     .setMaximized()
     .setVisible(true);
+```
+
+With title:
+```Java
+UsaidBox(String title)
+```
+
+With parent frame and title:
+```Java
+UsaidBox(JFrame parentFrame, String title)
 ```
 
 ## License
