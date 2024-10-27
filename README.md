@@ -3,7 +3,7 @@
 <img width="70%" src="https://github.com/hangga/sample-usaidbox/blob/main/usaidbook.png?raw=true"/>
 
 ## Pengantar
-`Usaidbox PDF Viewer` adalah libray Sederhana untuk menampilkan file PDF yang ter-embed dalam aplikasi (Swing GUI). Ia menggunakan Apache PDFBox sebagai backend untuk rendering PDF, menyediakan kemampuan tampilan dan manipulasi PDF yang mudah untuk aplikasi Anda.
+`Usaidbox PDF Viewer` adalah libray sederhana untuk membuat _PDF embedded-preview_ dalam aplikasi (Swing GUI). Dengan Apache PDFBox sebagai backend untuk rendering PDF, menyediakan kemampuan tampilan dan manipulasi PDF yang mudah untuk aplikasi Anda.
 
 ## Features
 
