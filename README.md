@@ -32,14 +32,14 @@ dependencies {
 
 ## Menggunakan UsaidBox
 
-#### 2. Membuat Objek `UsaidBox`
+#### 1. Membuat Objek `UsaidBox`
 Untuk menggunakan `UsaidBox`, buat objek baru dan panggil beberapa metode berikut sesuai kebutuhan:
 ```java
 // Membuat instance UsaidBox
 UsaidBox usaidBox = new UsaidBox("Viewer PDF");
 ```
 
-#### 3. Memuat PDF
+#### 2. Memuat PDF
 Untuk menampilkan PDF, gunakan metode `loadPdf()`. Anda bisa memuat PDF baik dari objek `File` atau dengan mengirimkan path dari file PDF sebagai `String`.
 ```java
 // Memuat PDF dari objek File
@@ -49,14 +49,14 @@ usaidBox.loadPdf(new File("path/to/your/pdf-file.pdf"));
 usaidBox.loadPdf("path/to/your/pdf-file.pdf");
 ```
 
-#### 4. Menampilkan Dialog `UsaidBox`
+#### 3. Menampilkan Dialog `UsaidBox`
 Setelah memuat PDF, panggil metode `setVisible(true)` untuk menampilkan dialog `UsaidBox`.
 ```java
 // Menampilkan dialog
 usaidBox.setVisible(true);
 ```
 
-#### 5. Opsi Tambahan
+#### 4. Opsi Tambahan
 
 - **Set Custom Size**: Ubah ukuran dialog sesuai keinginan.
   ```java
@@ -73,7 +73,7 @@ usaidBox.setVisible(true);
   usaidBox.setOutputFileName("custom-output-name.pdf");
   ```
 
-#### 6. Tombol & Fitur
+#### 5. Tombol & Fitur
 `UsaidBox` menyediakan beberapa kontrol dan tombol sebagai berikut:
 
 - **Scaling**: Gunakan kotak kombo di bagian atas untuk menyesuaikan tampilan:
@@ -90,7 +90,7 @@ usaidBox.setVisible(true);
 
 - **Close**: Tombol `Close` untuk menutup dialog.
 
-#### Contoh Penggunaan Lengkap
+#### 6. Contoh Penggunaan Lengkap
 ```java
 // Membuat instance UsaidBox dengan chaining method
 UsaidBox usaidBox = new UsaidBox("PDF Viewer")
