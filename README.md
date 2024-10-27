@@ -2,7 +2,8 @@
 
 <img width="70%" src="https://github.com/hangga/sample-usaidbox/blob/main/usaidbook.png?raw=true"/>
 
-Usaidbox PDF Viewer is a Simple Java library for displaying PDF files embedded within (Swing GUI) applications. It uses Apache PDFBox as the backend for PDF rendering, providing easy PDF viewing and manipulation capabilities for your app.
+## Pengantar
+`Usaidbox PDF Viewer` adalah libray Sederhana untuk menampilkan file PDF yang ter-embed dalam aplikasi (Swing GUI). Ia menggunakan Apache PDFBox sebagai backend untuk rendering PDF, menyediakan kemampuan tampilan dan manipulasi PDF yang mudah untuk aplikasi Anda.
 
 ## Features
 
@@ -11,6 +12,9 @@ Usaidbox PDF Viewer is a Simple Java library for displaying PDF files embedded w
 -	Supports page navigation
 -	Supports scaling option
 -	Supports Print and Save
+
+## System Requirements
+- Java 8 atau yang lebih baru.
 
 ## Installation
 
@@ -26,27 +30,76 @@ dependencies {
 }
 ```
 
-## Usage
+## Menggunakan UsaidBox
 
-Basic example to display a PDF file:
-```Java
-new UsaidBox()
-    .loadPdf(< path >)
-    .setMaximized()
-    .setVisible(true);
+#### 2. Membuat Objek `UsaidBox`
+Untuk menggunakan `UsaidBox`, buat objek baru dan panggil beberapa metode berikut sesuai kebutuhan:
+```java
+// Membuat instance UsaidBox
+UsaidBox usaidBox = new UsaidBox("Viewer PDF");
 ```
 
-With title:
-```Java
-UsaidBox(String title)
+#### 3. Memuat PDF
+Untuk menampilkan PDF, gunakan metode `loadPdf()`. Anda bisa memuat PDF baik dari objek `File` atau dengan mengirimkan path dari file PDF sebagai `String`.
+```java
+// Memuat PDF dari objek File
+usaidBox.loadPdf(new File("path/to/your/pdf-file.pdf"));
+
+// Atau memuat PDF dengan path langsung
+usaidBox.loadPdf("path/to/your/pdf-file.pdf");
 ```
 
-With parent frame and title:
-```Java
-UsaidBox(JFrame parentFrame, String title)
+#### 4. Menampilkan Dialog `UsaidBox`
+Setelah memuat PDF, panggil metode `setVisible(true)` untuk menampilkan dialog `UsaidBox`.
+```java
+// Menampilkan dialog
+usaidBox.setVisible(true);
 ```
 
-## License
+#### 5. Opsi Tambahan
+
+- **Set Custom Size**: Ubah ukuran dialog sesuai keinginan.
+  ```java
+  usaidBox.setCustomSize(1024, 768);
+  ```
+
+- **Set Maksimalkan Ukuran**: Untuk menampilkan dialog dalam ukuran layar penuh.
+  ```java
+  usaidBox.setMaximized();
+  ```
+
+- **Mengatur Nama File Output**: Tentukan nama file untuk output PDF saat diunduh.
+  ```java
+  usaidBox.setOutputFileName("custom-output-name.pdf");
+  ```
+
+#### 6. Tombol & Fitur
+`UsaidBox` menyediakan beberapa kontrol dan tombol sebagai berikut:
+
+- **Scaling**: Gunakan kotak kombo di bagian atas untuk menyesuaikan tampilan:
+  - `ACTUAL_SIZE`: Menampilkan dalam ukuran asli.
+  - `SHRINK_TO_FIT`: Mengecilkan tampilan agar pas di layar.
+  - `STRETCH_TO_FIT`: Memperbesar tampilan.
+  - `SCALE_TO_FIT`: Menyesuaikan skala agar pas di layar.
+
+- **Navigasi Halaman**: `Next` dan `Previous` untuk menggeser halaman.
+
+- **Print**: Tombol `Print` untuk mencetak file PDF.
+
+- **Save As**: Tombol `Save As` untuk mengunduh PDF dengan nama file yang ditentukan.
+
+- **Close**: Tombol `Close` untuk menutup dialog.
+
+#### Contoh Penggunaan Lengkap
+```java
+// Membuat instance UsaidBox dengan chaining method
+UsaidBox usaidBox = new UsaidBox("PDF Viewer")
+        .loadPdf("path/to/your/pdf-file.pdf")
+        .setCustomSize(1024, 768)
+        .setOutputFileName("OutputFile.pdf")
+        .setVisible(true);
+
+```
 
 This library uses <a href="https://pdfbox.apache.org/">Apache PDFBox</a>, which is licensed under the Apache License, Version 2.0. You are free to use, modify, and distribute this library under the following conditions:
 
