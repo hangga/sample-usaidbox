@@ -100,6 +100,7 @@ UsaidBox usaidBox = new UsaidBox("PDF Viewer")
         .setVisible(true);
 
 ```
+## License
 
 This library uses <a href="https://pdfbox.apache.org/">Apache PDFBox</a>, which is licensed under the Apache License, Version 2.0. You are free to use, modify, and distribute this library under the following conditions:
 
