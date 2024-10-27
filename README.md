@@ -7,7 +7,7 @@
 
 ## Features
 
--	Embedded PDF viewer for Java applications
+-	Embedded PDF viewer for Java (Swing GUI) applications
 -	Powered by Apache PDFBox for rendering PDFs
 -	Supports page navigation
 -	Supports scaling option
