@@ -1,7 +1,3 @@
-Tentu! Ini versi yang lebih santai dan tetap informatif:
-
----
-
 # Usaidbox PDF Viewer
 
 <img width="70%" src="https://github.com/hangga/sample-usaidbox/blob/main/usaidbook.png?raw=true"/>
