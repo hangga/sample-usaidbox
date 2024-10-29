@@ -43,9 +43,8 @@ UsaidBox usaidBox = new UsaidBox("Viewer PDF");
 Untuk menampilkan PDF, gunakan metode `loadPdf()`. Anda bisa memuat PDF baik dari objek `File` atau dengan mengirimkan path dari file PDF sebagai `String`.
 ```java
 // Memuat PDF dari objek File
-File pdfFile = new File("path/to/your/pdf-file.pdf")
-...
-...
+File pdfFile = ...
+
 usaidBox.loadPdf(pdfFile);
 
 // Atau memuat PDF dengan path langsung
