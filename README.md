@@ -32,19 +32,19 @@ dependencies {
 ```
 ### Maven
 ```xml
-<repositories>
+
   <repository>
-    <id>repsy</id>
-    <url>https://repo.repsy.io/mvn/hangga/repo</url>
+      <id>repsy</id>
+      <url>https://repo.repsy.io/mvn/hangga/repo</url>
   </repository>
-</repositories>
-<dependencies>
+
+
   <dependency>
-    <groupId>com.box.usaid</groupId>
-    <artifactId>usaidbox</artifactId>
-    <version>1.0.1</version>
+      <groupId>com.box.usaid</groupId>
+      <artifactId>usaidbox</artifactId>
+      <version>1.0.1</version>
   </dependency>
-</dependencies>
+
 ```
 
 ## How to Use UsaidBox
